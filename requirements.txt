@@ -1,0 +1,4 @@
+streamlit
+SpeechRecognition
+language-tool-python
+scikit-learn
