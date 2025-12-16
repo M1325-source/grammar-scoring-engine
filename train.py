@@ -9,7 +9,7 @@ def speech_to_text(audio_path):
     return r.recognize_google(audio)
 
 def grammar_score(text):
-    tool = language_tool_python.LanguageTool('en-US')
+    tool = language_tool_python.LanguageToolPublicAPI('en-US')
     matches = tool.check(text)
     errors = len(matches)
     words = len(text.split())
